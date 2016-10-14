@@ -1,0 +1,20 @@
+hund,katt
+
+hund:
+*lätta att få glade
+*neurtiska
+*tycker om att bada
+
+katt:
+*hatar att bada, men håller normallt sig ren
+*underhåller sig själv bättre
+*svårt att få den att tycka om dig
+*vill vara ensamma iblandå
+
+
+
+stuff to implement
+time - some kind of calendar?
+interaction with the animal
+inspect the animal
+UI
