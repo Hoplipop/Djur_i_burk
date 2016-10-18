@@ -85,8 +85,49 @@ class Djur:
         if energy>100:
             energy=100
 
-def Menu():
-    pass
+    # en funktion som visar hur djuret mår
+    def inspect(self):
+        print "name: " self.namn + "  ålder: " + self.age
+        print "hunger: " + statusBar(self.hunger)
+        print "hygiene: " + statusBar(self.hygiene)
+        print "attachment: " + statusBar(self.attachment)
+        print "fun: " + statusBar(self.fun)
+        print "energy: " + statusBar(self.energy)
+        if self.sick == True:
+            print self.namn + " är sjuk"
+
+# en funktion som skapar en bar som visar djurets status
+def statusBar(stat):
+    bar="["
+    i = 0
+    while stat > 0:
+        i = i+1
+        stat = (stat - 10)
+        bar = bar + "|"
+
+    while i = 10:
+        bar = bar + "-"
+        i = i+1
+    bar = bar + "]"
+    return bar
+
+# En meny som lämpligtvis visas när man ska skapa ett nytt djur
+def printCreateNew():
+    print "Hi it is time for you to create an animal to take care of"
+    print "it is you'r responsibility to make sure the animal survives"
+    print "you are going to need to teke care of youre animal on difirent ways"
+    print "for example you are going to need feed it an play with it too keep it fedd and happy"
+    print "to start you are first going to need to give the animal name"
+
+
+# meny som lämpligtvis visas när man ska välja vad man sa göra
+def printMenu():
+    print "it is time to take care if youre animal"
+    print "choose what you want to to with it"
+    print "if you want to know more about how it is doing choose insptct"
+    print "if you want to quit and save the animal do select quit"
+    print "1.Feed  2.Play  3.Sleep  4.wach  5.inspect  6.give medecin  7.quit"
+
 
 def moreDetails():
     pass
